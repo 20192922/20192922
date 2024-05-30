@@ -1,0 +1,8 @@
+project('project', 'c')
+dep_pthread = dependency('threads')
+dep_dl = dependency('dl')
+#dep_cairo = dependency('cairo')
+#dep_png = dependency('libpng')
+dep_sqlite = library('sqlite','sqlite3.c',install:true)
+executable('sqlite3', ['./sqlite3.c','./shell.c'],dependencies:[dep_pthread,dep_dl])
+executable('project', ['./main.c','./ldatabase.c'],link_with:dep_sqlite)

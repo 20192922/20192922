@@ -1,0 +1,4 @@
+{
+    "C_Cpp.default.configurationProvider": "mesonbuild.mesonbuild",
+    "C_Cpp.default.compileCommands": "/home/cgel/Documents/base_c/sqlite/builddir/compile_commands.json"
+}
